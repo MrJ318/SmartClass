@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jnxxgc.smartclass">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".SmartApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.jnxxgc.smartclass"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 更改屏幕纵横比例，适配全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <!-- Bmob更新渠道 -->
+        <meta-data
+            android:name="BMOB_CHANNEL"
+            android:value="" />
+
+        <!-- Bmob更新对话框 -->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".LogonActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".InsertActivity"
+            android:label="@string/title_activity_insert"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CheckActivity"
+            android:label="@string/title_activity_check"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ManagementActivity"
+            android:label="@string/title_activity_management"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PersonalActivity"
+            android:label="@string/title_activity_personal"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" />
+        <activity
+            android:name=".SummaryActivity"
+            android:label="@string/title_activity_summary" />
+        <activity android:name=".ActivityTest"></activity>
+    </application>
+
+</manifest>

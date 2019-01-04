@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2"
+    tools:context="com.jnxxgc.smartclass.CheckActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_check"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_check"
+        android:padding="@dimen/dp10">
+
+        <EditText
+            android:id="@+id/editdate_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="@string/insert_date"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edititem_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editdate_check"
+            android:hint="@string/insert_item"
+            android:inputType="text" />
+
+        <ListView
+            android:id="@+id/listViewcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/edititem_check" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

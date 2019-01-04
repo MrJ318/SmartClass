@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jevon.smartclass2.ManagementActivity">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_launcher"
+        android:orderInCategory="100"
+        android:title="添加" />
+    <item
+        android:id="@+id/action_import"
+        android:orderInCategory="100"
+        android:title="导入" />
+    <item
+        android:id="@+id/action_query"
+        android:icon="@drawable/menu_query"
+        android:orderInCategory="100"
+        android:title="查询"
+        app:showAsAction="always" />
+</menu>

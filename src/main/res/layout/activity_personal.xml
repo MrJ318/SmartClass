@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE0E2"
+    tools:context="com.jnxxgc.smartclass.PersonalActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_person"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_person"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editTextpname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextpsex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_sex"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextpclass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_class"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextpusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_username"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextppwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_password"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextpreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_xueji"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextpbirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_birth"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextpjur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/person_quanxian"
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/linearlayout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_name"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="text"
+                android:labelFor="@+id/editTextpname"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_sex"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpsex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="text"
+                android:labelFor="@+id/editTextpsex"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_class"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/person_hint_class"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_username"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="text"
+                android:labelFor="@+id/editTextpusername"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_password"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextppwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="text"
+                android:labelFor="@+id/editTextppwd"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_xueji"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:inputType="text"
+                android:labelFor="@+id/editTextpreg"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_birth"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/person_hint_birth"></EditText>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/personal_information_margin"
+            android:layout_marginTop="@dimen/personal_information_margin"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_quanxian"
+                android:textSize="@dimen/personal_information_title" />
+
+            <EditText
+                android:id="@+id/editTextpjur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/person_hint_quan"></EditText>
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

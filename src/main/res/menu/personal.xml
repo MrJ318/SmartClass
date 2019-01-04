@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jevon.smartclass2.PersonalActivity" >
+
+    <item
+        android:id="@+id/action_commit"
+        android:icon="@drawable/commit"
+        app:showAsAction="always"
+        android:title="提交"/>
+
+</menu>

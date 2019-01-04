@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jnxxgc.smartclass.SummaryActivity" >
+
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="保存"/>
+    <item
+        android:id="@+id/action_fen"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="分享"/>
+    <item
+        android:id="@+id/action_redraw"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="重新生成"/>
+
+</menu>
